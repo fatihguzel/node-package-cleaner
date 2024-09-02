@@ -42,20 +42,7 @@ To use `node-package-cleaner`, follow these steps:
 3. **Review the Output:**
    The tool will list packages that are detected as unused. Review the list carefully.
 
-4. **Confirm Removal:**
-   You will be prompted to confirm the removal of these packages. Confirm to proceed with removing the unused packages from your package.json.
-
-   ```bash
-   Scanning for unused packages...
-   - package1
-   - package2
-   - package3
-
-   Confirm removal of these packages? (y/n):
-
-   ```
-
-5. **Verify Changes:**
+4. **Verify Changes:**
    Check your package.json to ensure that the unused packages have been removed. You may also run npm install to update your node_modules directory accordingly.
    ```bash
    npm install
