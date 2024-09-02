@@ -1,0 +1,25 @@
+{
+  "name": "node-package-cleaner",
+  "version": "1.0.5",
+  "description": "Optimize your package.json by removing unused npm packages.",
+  "main": "src/index.js",
+  "bin": {
+    "npm-cleanup": "bin/npm-cleanup.js"
+  },
+  "keywords": [
+    "npm",
+    "cleanup",
+    "optimize",
+    "dependencies",
+    "package.json"
+  ],
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "author": "Fatih Güzel",
+  "license": "MIT",
+  "dependencies": {
+    "acorn": "^8.0.0",
+    "glob": "^8.0.0"
+  }
+}
