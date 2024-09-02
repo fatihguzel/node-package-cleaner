@@ -2,6 +2,10 @@
 
 `node-package-cleaner` is a tool that helps you optimize your `package.json` by identifying and removing unused npm packages from your project. It helps reduce package size and speeds up build times by eliminating unnecessary dependencies.
 
+## Development Stage:
+
+Please note that this library is currently in development. Features and functionality may change as we work towards a stable release. We appreciate your feedback and contributions during this phase.
+
 ## Features
 
 - **Detect Unused Packages:** Automatically finds npm packages in your project that are not being used.
