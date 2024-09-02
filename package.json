@@ -1,6 +1,6 @@
 {
   "name": "node-package-cleaner",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Optimize your package.json by removing unused npm packages.",
   "main": "src/index.js",
   "bin": {

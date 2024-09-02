@@ -4,7 +4,7 @@
 
 ## Development Stage:
 
-Please note that this library is currently in development. Features and functionality may change as we work towards a stable release. We appreciate your feedback and contributions during this phase.
+Please note that this library is currently in development. Features and functionality may change as we work towards a stable release. We appreciate your feedback and contributions during this phase.This library is designed exclusively for Node.js server projects. It does not support other platforms or technologies. To ensure optimal performance and compatibility, please use this library within a Node.js environment.
 
 ## Features
 
