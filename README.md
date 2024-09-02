@@ -35,7 +35,7 @@ To use `node-package-cleaner`, follow these steps:
 2. **Run the Command:**
 
    ```bash
-   node-package-cleaner
+   npm-cleanup
 
    ```
 
