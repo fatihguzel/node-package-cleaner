@@ -1,10 +1,14 @@
 {
   "name": "node-package-cleaner",
-  "version": "1.0.9",
+  "version": "1.1.0",
   "description": "Optimize your package.json by removing unused npm packages.",
   "main": "src/index.js",
   "bin": {
     "npm-cleanup": "bin/npm-cleanup.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fatihguzel/node-package-cleaner.git"
   },
   "keywords": [
     "npm",
