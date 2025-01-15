@@ -35,7 +35,7 @@ npm install -g node-package-cleaner
 2. **Run the Cleanup:**
 
     ```bash
-    npm-cleanup
+    npm run cleanup
     ```
 
 3. **Review and Confirm:**
