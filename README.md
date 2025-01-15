@@ -1,55 +1,83 @@
 # node-package-cleaner
 
-`node-package-cleaner` is a tool that helps you optimize your `package.json` by identifying and removing unused npm packages from your project. It helps reduce package size and speeds up build times by eliminating unnecessary dependencies.
-
-## Development Stage:
-
-Please note that this library is currently in development. Features and functionality may change as we work towards a stable release. We appreciate your feedback and contributions during this phase.This library is designed exclusively for Node.js server projects. It does not support other platforms or technologies. To ensure optimal performance and compatibility, please use this library within a Node.js environment.
+`node-package-cleaner` is a powerful CLI tool that helps you optimize your `package.json` by identifying and removing unused npm packages from your Node.js project. It helps reduce package size and speeds up build times by eliminating unnecessary dependencies.
 
 ## Features
 
-- **Detect Unused Packages:** Automatically finds npm packages in your project that are not being used.
-- **Remove Unnecessary Dependencies:** Safely removes unused dependencies from your `package.json`.
-- **Optimize Build Times:** Reduces build times by only downloading the necessary packages.
-- **Easy Integration:** Can be easily run via CLI and is compatible with any Node.js project.
+-   🔍 **Detect Unused Packages:** Automatically finds npm packages that are not being used in your project
+-   🧹 **Remove Unnecessary Dependencies:** Safely removes unused dependencies from your `package.json`
+-   ⚡ **Optimize Build Times:** Reduces build times by only keeping necessary packages
+-   🔬 **Smart Detection:** Analyzes code, imports, and scripts to identify truly unused packages
+-   🚀 **Easy Integration:** Simple CLI tool compatible with any Node.js project
+
+## Compatibility
+
+-   **Platform:** Node.js server projects
+-   **Supported File Types:** JavaScript, TypeScript, JSX, TSX
+-   **Dependency Types:** Supports both `dependencies` and `devDependencies`
 
 ## Installation
 
-You can install `node-package-cleaner` globally:
+Install globally via npm:
 
-    npm install -g node-package-cleaner
+```bash
+npm install -g node-package-cleaner
+```
 
 ## Usage
 
-To use `node-package-cleaner`, follow these steps:
+1. **Navigate to Your Project:**
 
-1. **Navigate to Your Project Directory:**
+    ```bash
+    cd /path/to/your/project
+    ```
 
-   Make sure you are in the root directory of your Node.js project.
+2. **Run the Cleanup:**
 
-   ```bash
-   cd /path/to/your/project
+    ```bash
+    npm-cleanup
+    ```
 
-   ```
+3. **Review and Confirm:**
+    - The tool will list detected unused packages
+    - You'll be prompted to confirm removal
+    - If confirmed, it automatically runs `npm install`
 
-2. **Run the Command:**
+## Example Workflow
 
-   ```bash
-   npm-cleanup
+```bash
+$ npm-cleanup
 
-   ```
+Unused Dependencies Detected:
+- axios
+- lodash
 
-3. **Review the Output:**
-   The tool will list packages that are detected as unused. Review the list carefully.
-
-4. **Verify Changes:**
-   Check your package.json to ensure that the unused packages have been removed. You may also run npm install to update your node_modules directory accordingly.
-   ```bash
-   npm install
-   ```
-
-## Stay in touch
-
+Do you want to remove these dependencies? (Y/N): y
+✅ Package.json optimized and dependencies updated.
 ```
-Author - Fatih Güzel
-```
+
+## How It Works
+
+-   Scans all project files (js, ts, jsx, tsx)
+-   Identifies modules imported or required in code
+-   Checks script dependencies
+-   Provides an interactive confirmation process
+-   Automatically updates `package.json` and reinstalls dependencies
+
+## Limitations
+
+-   Designed exclusively for Node.js projects
+-   Requires careful review before confirming package removal
+
+## Contributing
+
+Feedback and contributions are welcome! Please open issues or submit pull requests on our GitHub repository.
+
+## License
+
+MIT License
+
+## Stay in Touch
+
+Author: Fatih Güzel
+GitHub: https://github.com/fatihguzel/node-package-cleaner
