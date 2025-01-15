@@ -86,12 +86,8 @@ function findUsedModules(srcPath = `**/*.{${FILE_EXTENSIONS.join(",")}}`) {
                         });
                     }
                 });
-            } catch (astError) {
-                console.error(astError);
-            }
-        } catch (fileReadError) {
-            console.error(fileReadError);
-        }
+            } catch (astError) {}
+        } catch (fileReadError) {}
     });
 
     const unusedModules = [...potentialModules].filter(
