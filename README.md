@@ -1,3 +1,29 @@
+# node-package-cleaner
+
+`node-package-cleaner` is a powerful CLI tool that helps you optimize your `package.json` by identifying and removing unused npm packages from your Node.js project. It helps reduce package size and speeds up build times by eliminating unnecessary dependencies.
+
+## Features
+
+-   🔍 **Detect Unused Packages:** Automatically finds npm packages that are not being used in your project
+-   🧹 **Remove Unnecessary Dependencies:** Safely removes unused dependencies from your `package.json`
+-   ⚡ **Optimize Build Times:** Reduces build times by only keeping necessary packages
+-   🔬 **Smart Detection:** Analyzes code, imports, and scripts to identify truly unused packages
+-   🚀 **Easy Integration:** Simple CLI tool compatible with any Node.js project
+
+## Compatibility
+
+-   **Platform:** Node.js server projects
+-   **Supported File Types:** JavaScript, TypeScript, JSX, TSX
+-   **Dependency Types:** Supports both `dependencies` and `devDependencies`
+
+## Installation
+
+Install globally via npm:
+
+```bash
+npm install -g node-package-cleaner
+```
+
 ## Usage
 
 1. **Navigate to Your Project:**
@@ -9,7 +35,7 @@
 2. **Run the Cleanup:**
 
     ```bash
-    npm run cleanup
+    npm-cleanup
     ```
 
 3. **Review and Confirm:**
@@ -30,32 +56,28 @@ Do you want to remove these dependencies? (Y/N): y
 ✅ Package.json optimized and dependencies updated.
 ```
 
-## Alternative Global Installation
+## How It Works
 
-If you prefer global installation:
+-   Scans all project files (js, ts, jsx, tsx)
+-   Identifies modules imported or required in code
+-   Checks script dependencies
+-   Provides an interactive confirmation process
+-   Automatically updates `package.json` and reinstalls dependencies
 
-```bash
-# Install globally
-npm install -g node-package-cleaner
+## Limitations
 
-# Run from any project directory
-npm-cleanup
-```
+-   Designed exclusively for Node.js projects
+-   Requires careful review before confirming package removal
 
-## Project-Specific Setup
+## Contributing
 
-Add to your project's `package.json`:
+Feedback and contributions are welcome! Please open issues or submit pull requests on our GitHub repository.
 
-```json
-{
-    "scripts": {
-        "cleanup": "node-package-cleaner"
-    }
-}
-```
+## License
 
-Then run:
+MIT License
 
-```bash
-npm run cleanup
-```
+## Stay in Touch
+
+Author: Fatih Güzel
+GitHub: https://github.com/fatihguzel/node-package-cleaner
